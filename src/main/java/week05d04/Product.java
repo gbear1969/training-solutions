@@ -20,7 +20,6 @@ public class Product {
     }
 
     public String toString() {
-        return "Raktáron: " +
-                "termék: " + name + ", fogyasztható = " + end;
+        return "Raktáron: " + name + ", fogyasztható = " + end;
     }
 }

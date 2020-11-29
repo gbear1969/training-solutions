@@ -10,6 +10,9 @@ public class Store {
     public void addProduct(Product product) {
         if (egyedi(product) && fogyaszthato(product)) {
             lista.add(product);
+        } else {
+            System.out.println("A(z) " + product.getName() + " megnevezésű, " + product.getEnd() +
+                    "-ig fogyasztható termék nem adható a raktárhoz, mert már van ilyen termék, vagy lejárt a szavatossága!");
         }
     }
 
