@@ -5,7 +5,7 @@ public class MathAlgorithms {
         if (x < 1) {
             throw new IllegalArgumentException("Bocs, az ellenőrzés csak pozitív egész számokra működik.");
         } else {
-            if (x < 4) {
+            if (x > 1 && x < 4) {
                 return true;
             }
 
