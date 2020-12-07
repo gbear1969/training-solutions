@@ -9,7 +9,7 @@ public class MathAlgorithms {
                 return true;
             }
 
-            if (x % 2 == 0) {
+            if (x == 1 || x % 2 == 0) {
                 return false;
             }
 
