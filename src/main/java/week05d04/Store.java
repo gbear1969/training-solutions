@@ -1,21 +1,51 @@
-//package week05d04;
+package week05d04;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
-//public class Store {
-  //  public static void main(String[] args) {
-    //    ArrayList<Product> Store = new ArrayList<Product>();
+public class Store {
 
-      //  public void addProduct(Product) {
-        //    Product Product = new Product("alma", 2022, 12, 20);
-          //  Store.add(Product);
-        //}
+        private List<Product> store = new ArrayList<>();
 
-        //public int getNumberOfExpired() {
-          //  for (expired: Store(date)
-            //     ) {
 
-            //}
-        //}
-    //}
-//}
+    public boolean addProduct(Product product1) {
+
+        if (store.size() == 0) {
+            store.add(new Product("vaj", 2020, 11, 01));
+        }
+
+        int count = 0;
+            for (Product product: store) {
+                if (product1.getName().equalsIgnoreCase(product.getName())) {
+                    count++;
+                    //break;
+                }
+            }
+
+            if (!product1.getDate().isBefore(LocalDate.now()) && count == 0) {
+                store.add(product1);
+                return true;
+            }
+            return  false;
+        }
+
+        public int getNumberOfExpired() {
+            int count = 0;
+            for (Product product: store) {
+                if (product.getDate().isBefore(LocalDate.now())) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public String toString() {
+            String lista ="";
+            for (Product p: store) {
+                lista = lista + p.getName() + " (" + p.getDate() + "); ";
+            }
+            return lista;
+        }
+    }
+

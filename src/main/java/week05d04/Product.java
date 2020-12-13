@@ -16,4 +16,12 @@ public class Product {
         this.day = day;
         date = LocalDate.of(year, month, day);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
 }

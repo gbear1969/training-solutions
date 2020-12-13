@@ -1,13 +1,17 @@
-//package week05d04;
+package week05d04;
 
-//public class Main {
-  //  public static void main(String[] args) {
+import java.util.Arrays;
 
-    //    Store store = new Store();
-      //  store.addProduct(new Product("tej", 2020, 11, 1));
-        //store.addProduct(new Product("párizsi", 2020, 12, 25));
-        //store.addProduct(new Product("kenyér", 2020, 12, 27));
-        //store.addProduct(new Product("párizsi", 2020, 12, 29));
-        //System.out.println(store.lista.toString());
-        //System.out.println(store.getNumberOfExpired());    }
-//}
+public class Main {
+    public static void main(String[] args) {
+
+
+        Store store = new Store();
+
+        System.out.println(store.addProduct(new Product("tej", 2020, 11, 1)));
+        System.out.println(store.addProduct(new Product("párizsi", 2020, 12, 25)));
+        System.out.println(store.addProduct(new Product("kenyér", 2020, 12, 27)));
+        System.out.println(store.addProduct(new Product("párizsi", 2020, 12, 29)));
+        System.out.println(store.toString());
+        System.out.println(store.getNumberOfExpired());    }
+}
