@@ -26,7 +26,7 @@ public class Robot {
         return "A robot koordinátái: X = " + getX() + ", Y = " + getY();
     }
 
-    public void calc(char k) {
+    private void calc(char k) {
         switch (k) {
             case 'f':
                 y++;
