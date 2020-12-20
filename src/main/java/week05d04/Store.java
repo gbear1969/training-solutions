@@ -2,6 +2,7 @@ package week05d04;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Store {
@@ -46,6 +47,7 @@ public class Store {
                 lista = lista + p.getName() + " (" + p.getDate() + "); ";
             }
             return lista;
+
         }
     }
 

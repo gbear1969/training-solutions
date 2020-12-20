@@ -7,6 +7,7 @@ public class Main {
         System.out.println(mA.greatestCommonDivisor(1003, 177));
         System.out.println(mA.greatestCommonDivisor(1003, 1003));
         System.out.println(mA.greatestCommonDivisor(16, 8));
+        System.out.println(mA.greatestCommonDivisor(42, 30));
         System.out.println(mA.greatestCommonDivisor(14, 10));
         System.out.println(mA.greatestCommonDivisor(17, 7));
     }
