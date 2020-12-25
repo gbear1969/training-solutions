@@ -2,27 +2,15 @@ package week07d05;
 
 public class Vehicle {
 
-    private int numberOfGears = 5;
-    private TransmissionTypes transmissiontype = TransmissionTypes.MANUAL;
-
-    public Vehicle(int numberOfGears, TransmissionTypes transmissiontype) {
-        this.numberOfGears = numberOfGears;
-        this.transmissiontype = transmissiontype;
-    }
+    private int numberOfGears;
+    private TransmissionTypes transmissiontype;
 
     public int getNumberOfGears() {
-        return numberOfGears;
+        return 5;
     }
 
     public TransmissionTypes getTransmissiontype() {
-        return transmissiontype;
+        return TransmissionTypes.MANUAL;
     }
 
-    public void setNumberOfGears(int numberOfGears) {
-        this.numberOfGears = numberOfGears;
-    }
-
-    public void setTransmissiontype(TransmissionTypes transmissiontype) {
-        this.transmissiontype = transmissiontype;
-    }
 }

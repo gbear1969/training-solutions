@@ -1,6 +1,6 @@
 package week07d05;
 
-public class Car extends Vehicle {
+public class Motorcycle extends Truck {
 
     @Override
     public int getNumberOfGears() {
@@ -9,6 +9,6 @@ public class Car extends Vehicle {
 
     @Override
     public TransmissionTypes getTransmissiontype() {
-        return TransmissionTypes.AUTOMATIC;
+        return TransmissionTypes.SEQUENTIAL;
     }
 }
