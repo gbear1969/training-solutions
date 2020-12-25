@@ -13,7 +13,7 @@ public class CylinderCalculatorBasedOnCircle {
     }
 
     public static void main(String[] args) {
-        CylinderCalculatorBasedOnCircle cCBC = new CylinderCalculatorBasedOnCircle();
+        CylinderCalculatorBasedOnCircle cCBOC = new CylinderCalculatorBasedOnCircle();
         System.out.println(cCBOC.calculateVolume(5,10));
         System.out.println(cCBOC.calculateSurfaceArea(5,10));
     }
