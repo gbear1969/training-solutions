@@ -10,5 +10,10 @@ public class PiMain {
         System.out.println("A henger térfogata : " + cyC.calculateVolume(5 , 10));
         System.out.println("A henger felülete: " + cyC.calculateSurfaceArea(5, 10));
         System.out.println("A Pi értéke: " + CircleCalculator.PI);
+
+        CylinderCalculatorBasedOnCircle cCBOC = new CylinderCalculatorBasedOnCircle();
+        System.out.println("A henger térfogata : " + cCBOC.calculateVolume(5,10));
+        System.out.println("A henger felülete: " + cCBOC.calculateSurfaceArea(5,10));
+
     }
 }
