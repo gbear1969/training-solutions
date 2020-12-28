@@ -8,7 +8,6 @@ public class WhichTypeMain {
         System.out.println(wT.whichType(Long.toString((long)Byte.MAX_VALUE - 1)));
         System.out.println(wT.whichType(Long.toString((long)Short.MAX_VALUE - 1)));
         System.out.println(wT.whichType(Long.toString((long)Integer.MAX_VALUE - 1)));
-        System.out.println(wT.whichType(Long.toString(0)));
-        System.out.println(Short.MAX_VALUE);
+
     }
 }
