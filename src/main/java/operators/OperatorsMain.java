@@ -30,6 +30,6 @@ public class OperatorsMain {
         int j = Long.valueOf(s, 2).intValue(); //negatív számként értelmezi a kettes komplementer visszafejtése miatt
         System.out.println(j);
 
-
+        System.out.println(0333); //=219, mert a vezető 0 miatt 8-as számrendszerben értelmezi
     }
 }
