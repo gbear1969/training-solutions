@@ -1,36 +1,18 @@
 package week10d01;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Hiking {
 
-    public double getPlusElevation(String list) {
-        if (list == null) {
-            throw new IllegalArgumentException("Incorrect parameter string!");
-        }
-        Scanner sc = new Scanner(list).useDelimiter(",");
+    public double getPlusElevation(List<Double> list) {
         double sum = 0.0;
-        double a = 0.0;
-        double b = 0.0;
-        if (sc.hasNext()) {
-            if ( sc.hasNextDouble()) {
-                a = sc.nextDouble();
-            } else {
-                throw new IllegalArgumentException("Incorrect parameter string!");
-            }
-        }
-        while (sc.hasNext()) {
-            if (sc.hasNextDouble()) {
-                b = sc.nextDouble();
-                if (b - a > 0) {
-                    sum += (b - a);
-                }
-                a = b;
-            } else {
-                throw new IllegalArgumentException("Incorrect parameter string!");
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i) > list.get(i - 1)) {
+                sum += list.get(i) - list.get(i - 1);
             }
         }
         return sum;
-    }
 
+    }
 }
