@@ -13,19 +13,16 @@ public class MaxTravel {
         int count = 1;
         int max = 0;
         for (int i = 1; i < s.size(); i++) {
-            if (s.get(i - 1) != s.get(i) || i + 1 == s.size()) {
-                if (i + 1 == s.size()) {
-                    count ++;
-                }
+            if (s.get(i - 1) == s.get(i)) {
+                count++;
+            }
+            if (i + 1 == s.size() || s.get(i + 1) != s.get(i)) {
                 if (count > max) {
                     max = count;
                     stop = s.get(i - 1);
-                    count = 1;
+                    count = 0;
                 }
-            } else {
-                    count++;
             }
-
         }
         return stop;
     }
