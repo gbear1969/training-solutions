@@ -5,10 +5,14 @@ import java.util.List;
 
 public class Cv {
     private String name;
-    private int level;
     private List<Skill> skills = new ArrayList<>();
 
-    public Cv(List<Skill> skills) {
+    public Cv(String name) {
+        this.name = name;
+    }
+
+    public Cv(String name, List<Skill> skills) {
+        this.name = name;
         this.skills = skills;
     }
 
@@ -22,18 +26,18 @@ public class Cv {
 
     public void addSkills(String... skill) {
         for (String s: skill) {
-            name = s.substring(0, s.indexOf(" "));
-            level = Integer.parseInt(s.substring(s.lastIndexOf("(") + 1, s.indexOf(")")));
+            String name = s.substring(0, s.lastIndexOf(" ("));
+            int level = Integer.parseInt(s.substring(s.lastIndexOf("(") + 1, s.indexOf(")")));
             skills.add(new Skill(name, level));
         }
     }
 
-    public int findSkillLevelByName(String name) {
+    public int findSkillLevelByName(String skill) {
         for (Skill s :skills) {
-            if (name.equals(s.getName())) {
+            if (skill.equals(s.getName())) {
                 return s.getLevel();
             }
         }
-        return 0;
+        throw new SkillNotFoundException();
     }
 }

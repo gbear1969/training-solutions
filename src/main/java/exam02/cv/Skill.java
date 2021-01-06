@@ -5,9 +5,6 @@ public class Skill {
     private int level;
 
     public Skill(String name, int level) {
-        if (name == null || name.isEmpty() || name.isBlank() || level < 1 || level > 5) {
-            throw new ClassNotFoundException();
-        }
         this.name = name;
         this.level = level;
     }
