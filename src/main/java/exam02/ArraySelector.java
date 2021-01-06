@@ -1,19 +1,14 @@
 package exam02;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArraySelector {
     public String selectEvens(int[] nums) {
-        String r = "";
-        if (nums.length > 0) {
-            r = r +  "[";
-        }
+        List<Integer> r = new ArrayList<>();
         for (int i = 0; i < nums.length; i += 2) {
-            r = r + nums[i];
-            if (i + 2 < nums.length) {
-                r = r + ", ";
-            } else {
-                r = r + "]";
-            }
+            r.add(nums[i]);
         }
-        return r;
+        return nums.length == 0 ? "" : r.toString();
     }
 }
