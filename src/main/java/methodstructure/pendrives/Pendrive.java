@@ -1,9 +1,9 @@
 package methodstructure.pendrives;
 
 public class Pendrive {
-    public String name;
-    public int capacity;
-    public int price;
+    private String name;
+    protected int capacity;
+    protected int price;
 
     public Pendrive(String name, int capacity, int price) {
         this.name = name;

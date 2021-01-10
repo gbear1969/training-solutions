@@ -1,7 +1,5 @@
 package methodstructure.pendrives;
 
-import methodstructure.pendrives.Pendrive.*;
-
 import java.util.List;
 
 public class Pendrives {
