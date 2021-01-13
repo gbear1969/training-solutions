@@ -10,9 +10,9 @@ public class WordFilter {
             throw new IllegalArgumentException("Nem megfelelő tömb vagy karakter!");
         }
         List<String> list = new ArrayList<>();
-        for (String w: words) {
-            if (w.toLowerCase().contains(String.valueOf(c).toLowerCase())) {
-                list.add(w);
+        for (String word: words) {
+            if (word.toLowerCase().contains(String.valueOf(c).toLowerCase())) {
+                list.add(word);
             }
         }
         return list;

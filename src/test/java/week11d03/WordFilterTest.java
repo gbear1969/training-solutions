@@ -19,7 +19,7 @@ class WordFilterTest {
         list.add("macska");
         list.add("kutya");
         list.add("Cirmos");
-        list.add("Blöki");
+        list.add("Bundi");
         assertEquals(Arrays.asList("macska", "Cirmos"), wf.wordsWithChar(list, 'c'));
 
     }
