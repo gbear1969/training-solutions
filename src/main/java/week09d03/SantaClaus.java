@@ -17,6 +17,6 @@ public class SantaClaus {
     }
 
     public List<Person> getPersons() {
-        return new ArrayList<>(List.copyOf(persons);
+        return new ArrayList<>(List.copyOf(persons));
     }
 }
