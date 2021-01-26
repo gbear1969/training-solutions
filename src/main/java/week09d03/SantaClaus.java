@@ -1,5 +1,6 @@
 package week09d03;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SantaClaus {
@@ -13,5 +14,9 @@ public class SantaClaus {
         for (Person p: persons) {
             p.setPresent();
         }
+    }
+
+    public List<Person> getPersons() {
+        return new ArrayList<>(List.copyOf(persons);
     }
 }
