@@ -20,4 +20,8 @@ public class PostFinder {
         }
         return selectedPosts;
     }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
 }
