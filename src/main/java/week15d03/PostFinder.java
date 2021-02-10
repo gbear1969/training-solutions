@@ -15,8 +15,9 @@ public class PostFinder {
         List<Post> selectedPosts = new ArrayList<>();
         for (Post p: posts) {
             if (p.getOwner().equals(user) && !p.getContent().isEmpty()
-                    && !p.getTitle().isEmpty() && p.getPublishedAt().isBefore(LocalDate.now()));
-            selectedPosts.add(p);
+                    && !p.getTitle().isEmpty() && p.getPublishedAt().isBefore(LocalDate.now())) {
+                selectedPosts.add(p);
+            }
         }
         return selectedPosts;
     }
