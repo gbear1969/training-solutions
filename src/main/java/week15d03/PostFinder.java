@@ -25,4 +25,11 @@ public class PostFinder {
     public List<Post> getPosts() {
         return posts;
     }
+
+    @Override
+    public String toString() {
+        return "PostFinder{" +
+                "posts=" + posts +
+                '}';
+    }
 }
