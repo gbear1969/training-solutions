@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class CanoeOffice {
-    private List<CanoeRental> rents = new ArrayList<>();
+/*    private List<CanoeRental> rents = new ArrayList<>();
 
     public void createRental(CanoeRental canoeRental) {
         rents.add(canoeRental);
@@ -62,5 +62,5 @@ public class CanoeOffice {
         }
         return countOfTypes;
     }
-
+*/
 }
